@@ -1,0 +1,71 @@
+$buttoncolor: #ff8200;
+
+$things1: #94cef3;
+$things2: rgb(12, 102, 232);
+
+$mainBack: #0f3557;
+$secondBack: #ffffff;
+$thirdBack: #f8f8f8;
+
+$logoText: #063256;
+$mainText: #050a30;
+$secondText: #56575b;
+
+
+.profileWrap {
+    background-color: $secondBack;
+    height: 800px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .profileContainer {
+        display: flex;
+        height: 96%;
+        width: 100%;
+        .profileMenuContainer {
+            width: 20%;
+            height: 100%;
+            background-color: $secondBack;
+            border-right: 1px solid rgba(0, 0, 0, 0.11);
+            .menuContent {
+                height: 100%;
+                width: 100%;
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 50px;
+                    width: 100%;
+                    height: 50px;
+                    margin: 5px;
+                    color: $mainText;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 100;
+                    font-size: 16px;
+                    border: black;
+                    cursor: pointer;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+                div:hover {
+                    background-color: rgb(245, 245, 245);
+                    border-radius: 30px;
+                }
+                .active {
+                    background-color: #94cef3;
+                    border-radius: 30px;
+                    color: $things2;
+                }
+                .active:hover {
+                    background-color: #94cff3bd;
+                }
+            }
+        }
+        .profileCurrentContainer {
+            width: 80%;
+            height: 100%;
+            background-color: $secondBack;
+        }
+    }
+}

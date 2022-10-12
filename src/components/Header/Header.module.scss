@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+$buttoncolor: #ff8200;
+
+$things1: #94cef3;
+$things2: #0c66e8;
+
+$mainBack: #0f3557;
+$secondBack: #ffffff;
+$thirdBack: #f8f8f8;
+
+$logoText: #063256;
+$mainText: #050a30;
+$secondText: #56575b;
+
+.headerWrap {
+    background-color: $secondBack;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+    width: 100%;
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        .headerLeft {
+            display: flex;
+            align-items: center;
+            .logo {
+                margin-left: 50px;
+                width: 370px;
+                height: 100px;
+                background-image: url('./logoBlue.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+            .menuL {
+                margin-left: 50px;
+                a {
+                    color: $logoText;
+                    font-family: 'Unna', serif;
+                    text-decoration: none;
+                    margin: 0px 10px 0px 10px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: $mainText;
+                }
+                a:hover {
+                    color: #050a30ad;
+                }
+            }
+        }
+        .headerRight {
+            display: flex;
+            flex-direction: row;
+            .menuR {
+                margin-right: 50px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .loggedIn {
+                    a {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                a {
+                    font-weight: 500;
+                    color:#050a30;
+                    margin-left: 20px; 
+                    text-decoration: none;
+                    font-family: 'Unna', serif;
+                    font-size: 22px;
+                    color: $mainText;
+                }
+                a:hover {
+                    color: #050a30ad;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .headerWrap {
+        .headerContainer {
+            .headerLeft {
+                .logo {
+                    margin-left: 10px;
+                    width: 60px;
+                    background-image: url('./iconBlack.png');
+                }
+                .menuL {
+                    margin-left: 10px;
+                }
+            }
+            .headerRight{
+                .menuR {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+}

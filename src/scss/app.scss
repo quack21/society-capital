@@ -1,0 +1,20 @@
+$buttoncolor: #ff8200;
+
+$things1: #94cef3;
+$things2: #0c66e8;
+
+$mainBack: #0f3557;
+$secondBack: #ffffff;
+$thirdBack: #f8f8f8;
+
+$logoText: #063256;
+$mainText: #050a30;
+$secondText: #56575b;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    background-color: $secondBack;
+}

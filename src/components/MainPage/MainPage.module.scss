@@ -1,0 +1,24 @@
+$buttoncolor: #ff8200;
+
+$things1: #94cef3;
+$things2: #0c66e8;
+
+$mainBack: #0f3557;
+$secondBack: #ffffff;
+$thirdBack: #f8f8f8;
+
+$logoText: #063256;
+$mainText: #050a30;
+$secondText: #56575b;
+
+.pageWrap {
+    .backgroundGroup {
+        .one {
+            height: 1600px;
+            width: 100%;
+            background-image: url('./efgh3.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
